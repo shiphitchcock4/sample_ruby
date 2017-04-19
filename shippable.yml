@@ -21,7 +21,7 @@ env:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
 integrations:
   notifications:
-     - integrationName: email         
+    - integrationName: email         
       type: email        
       recipients: 
         - shiptest.rc.ow@gmail.com
