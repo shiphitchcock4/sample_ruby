@@ -20,7 +20,7 @@ build:
   ci:      
    # - sleep 2m
     - sudo docker ps -a
-    - hy
+    
 env:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
   
