@@ -23,7 +23,7 @@ env:
 build:
   ci:
     - mkdir -p shippable/codecoverage
-    - mvn install
+    #- mvn install
     - cp -r target shippable/codecoverage
     
   
