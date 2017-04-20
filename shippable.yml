@@ -23,9 +23,9 @@ env:
 build:
   ci:
     - bundle install --gemfile=$SHIPPABLE_GEMFILE $SHIPPABLE_BUNDLER_ARGS
-   # - mkdir -p shippable/codecoverage
+    - mkdir -p shippable/codecoverage
     #- mvn install
-   # - cp -r target shippable/codecoverage
+    - cp -r target shippable/codecoverage
     
   
 integrations:
