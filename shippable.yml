@@ -15,15 +15,10 @@ rvm:
   #- jruby-1.7.19
   #- jruby-9.0.0
   #- ree  
-  
-build:      
-  ci:      
-   # - sleep 2m
-    - sudo docker ps -a
-    
+
+
 env:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
-  
 integrations:
   notifications:
     - integrationName: email         
@@ -35,7 +30,6 @@ integrations:
       sendCoverageReports : true
       on_start: always
       on_success: always 
-      on_failure: always 
-
+      on_failure: always
    
 
