@@ -19,6 +19,14 @@ rvm:
 
 env:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
+  
+build:
+  ci:
+    - mkdir -p shippable/codecoverage
+    - mvn install
+    - cp -r target shippable/codecoverage
+    
+  
 integrations:
   notifications:
     - integrationName: email         
