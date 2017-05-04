@@ -26,7 +26,7 @@ build:
     - mkdir -p shippable/codecoverage
     - mvn install
     - cp -r target shippable/codecoverage
-   # - echo $PULL_REQUEST_REPO_FULL_NAME
+    - echo $PULL_REQUEST_REPO_FULL_NAME
     
   
 integrations:
