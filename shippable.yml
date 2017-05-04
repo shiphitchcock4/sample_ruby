@@ -24,9 +24,9 @@ build:
   ci:
     - bundle install --gemfile=$SHIPPABLE_GEMFILE $SHIPPABLE_BUNDLER_ARGS
     - mkdir -p shippable/codecoverage
-    #- mvn install
+    - mvn install
     - cp -r target shippable/codecoverage
-    - echo $PULL_REQUEST_REPO_FULL_NAME
+   # - echo $PULL_REQUEST_REPO_FULL_NAME
     
   
 integrations:
